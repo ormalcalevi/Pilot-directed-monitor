@@ -1,0 +1,143 @@
+/*form design */
+.formInput {
+  width: 300px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;/*רווחים בין האלמנטים*/
+  font-family: Arial;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:30px;
+}
+
+.input label {
+  width: 80px;
+  font-weight: bold; 
+  font-size: 25px;
+
+}
+/*עיצוב תיבת הטקסט*/
+.input input {
+  flex: 1;
+  background-color: #ccc;
+  border: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #ccc;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  direction: rtl;
+
+  /* הופך את הצורה לחץ */
+  clip-path: polygon(
+    0% 0%,     /* פינה עליונה שמאל */
+    85% 0%,    /* כמעט סוף העליון */
+    100% 50%,  /* חוד החץ */
+    85% 100%,  /* מימיןכמעט סוף התחתון */
+    0% 100%    /* פינה תחתונה שמאל */
+  );
+
+  transition: background-color 0.3s ease;
+  /* יישור לימין */
+  align-self: flex-end;
+  margin-top: 20px;
+
+  /* גודל קטן יותר */
+  font-size: 14px;
+  width: 120px;
+}
+
+.btn:hover {
+  background-color: #999; 
+}
+
+
+/*design status button*/
+.buttonsStatus {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* רווח בין הכפתורים */
+  margin-top: 20px;
+}
+
+.buttonsStatus button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.buttonsStatus button:hover {
+  background-color: #e0e0e0;
+}
+
+
+/*css TEXT*/
+.circlesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.value {
+  font-size: 18px;
+}
+
+/*design Visual*/
+.visual-display-container {
+
+ justify-content: space-around; /* במקום center */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 45px;
+  margin-top: 30px;
+  gap: 100px;  /* או אפילו 100px אם בא לך ממש רווח */
+
+}
+
+.visual-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.visual-block p {
+  margin-top: 15px;
+  font-weight: bold;
+}
